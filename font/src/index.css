@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* CSS สำหรับซ่อน Scrollbar ใน WebKit browsers (Chrome, Safari, Edge) */
+.hide-scrollbar-webkit::-webkit-scrollbar {
+    display: none;
+}
+
+/* CSS สำหรับซ่อน Scrollbar ใน Firefox */
+.hide-scrollbar-firefox {
+    scrollbar-width: none; /* สำหรับ Firefox */
+}
+
+/* สำหรับ IE/Edge (legacy) */
+.hide-scrollbar-ie {
+    -ms-overflow-style: none;
+}
+
+/* รวม class เดียวเพื่อให้ใช้ได้หลายบราวเซอร์ */
+.hide-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+/* สำหรับ WebKit browsers (Chrome, Safari, Edge) */
+.hide-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
