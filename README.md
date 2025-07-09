@@ -55,16 +55,17 @@
         * `--reload`: ตัวเลือกนี้จะทำให้เซิร์ฟเวอร์รีโหลดโดยอัตโนมัติเมื่อมีการเปลี่ยนแปลงโค้ดในระหว่างการพัฒนา
     * Backend จะรันที่ `http://127.0.0.1:8000` โดยค่าเริ่มต้น (หรือพอร์ตอื่นๆ หากมีการกำหนดค่าไว้)
 
-5. ลองยิง API ผ่าน POSTMAN , THUNTER
-http://127.0.0.1:8000/upload_csv แนบไฟล์ใน body 1.key = file    2.Value = ไฟล์ที่จะเอาลง
+5. **ลองยิง API ผ่าน POSTMAN , THUNTER**
+    ```bash
+    http://127.0.0.1:8000/upload_csv แนบไฟล์ใน body 1.key = file    2.Value = ไฟล์ที่จะเอาลง
+    ถ้าผ่านจะขึ้น Status ว่า "CSV loaded and vectorstore built"
+    ```
 
-ถ้าผ่านจะขึ้น Status ว่า "CSV loaded and vectorstore built"
-
-6. ลองถาม 
-http://127.0.0.1:8000/ask แนบคำตอบใน body 1.key = query  2.Value = คำถามที่จะถาม
-
-AI จะตอบถ้ามันสามาถตอบได้ และ จะตอบ i don't know ถ้าไม่รู้
-
+6. **ลองถาม**
+    ```bash
+    http://127.0.0.1:8000/ask แนบคำตอบใน body 1.key = query  2.Value = คำถามที่จะถาม
+    AI จะตอบถ้ามันสามาถตอบได้ และ จะตอบ i don't know ถ้าไม่รู้
+    ```
 ---
 
 1.  **การตั้งค่า Frontend (React/Web Application):**
