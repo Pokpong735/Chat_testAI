@@ -1,7 +1,14 @@
 # Chat_AI Project
 
 โปรเจกต์นี้เป็นส่วน Backend ของระบบ Chat AI ที่พัฒนาด้วย FastAPI (Python)
+** Open AI ที่ใช้คือ Ollama **
+### ต้องติดตั้ง Ollama ในเครื่องด้วยครับและ ดึง Moduls มาใช้ พิม ollama pull ตามด้วย Moduls ดังนี้
 
+* mxbai-embed-large:latest   
+* gemma3:1b                  
+* all-minilm:latest           
+* llama3:latest
+        
 ## การเริ่มต้นใช้งาน (Getting Started)
 
 ### ข้อกำหนด (Prerequisites)
